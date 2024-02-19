@@ -30,7 +30,7 @@ function NavBar() {
             </Nav.Link>
             <Nav.Link href="/projects">
               <FaLaptopCode />
-              Projects
+              Projects/Pubblications
             </Nav.Link>
             <Nav.Link href="/resume">
               <FaFileAlt />
