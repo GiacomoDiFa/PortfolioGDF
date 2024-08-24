@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from 'react'
-import { Card } from 'react-bootstrap'
-import logo from '../logo.svg'
+import { Card, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
+import { IoIosLink } from 'react-icons/io'
 
-export default function CardProject(
+/*TODO: Add the tecnologies and programing languages used */
+
+export default function CardProject({
   title,
-  date,
-  imageurl,
+  description,
+  imageUrl,
   githubLink,
-  programmingLanguages
-) {
+  programmingLanguages,
+  websiteLink,
+}) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
+  const [isHovered, setIsHovered] = useState(false)
+  const [isHoveredLink, setIsHoveredLink] = useState(false)
+  const [isHoveredIcon, setIsHoveredIcon] = useState(false)
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768)
@@ -19,6 +25,30 @@ export default function CardProject(
 
     return () => window.removeEventListener('resize', handleResize)
   }, [])
+
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+  }
+
+  const handleMouseLinkEnter = () => {
+    setIsHoveredLink(true)
+  }
+
+  const handleMouseLinkLeave = () => {
+    setIsHoveredLink(false)
+  }
+
+  const handleMouseIconEnter = () => {
+    setIsHoveredIcon(true)
+  }
+
+  const handleMouseIconLeave = () => {
+    setIsHoveredIcon(false)
+  }
 
   return (
     <div
@@ -29,6 +59,8 @@ export default function CardProject(
         flexDirection: 'column',
         alignItems: 'start',
       }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <Card
         bg="light"
@@ -48,13 +80,13 @@ export default function CardProject(
         >
           <Card.Img
             alt="prova"
-            src={logo}
+            src={imageUrl}
             style={{
               backgroundColor: 'red',
               width: isMobile ? '100%' : '512px',
               height: isMobile ? 'auto' : '310px',
             }}
-          ></Card.Img>
+          />
         </Card.Body>
       </Card>
       <h1
@@ -64,20 +96,60 @@ export default function CardProject(
           fontWeight: 'bold',
         }}
       >
-        Project name
+        {title}
       </h1>
       <h3
         style={{
-          color: '#73808D',
+          color: isHovered ? '#009999' : '#73808D',
           fontSize: isMobile ? '16px' : '20px',
           fontWeight: '400',
+          transition: 'color 0.3s ease',
         }}
       >
-        Project Description
+        {description}
       </h3>
-      <Link to={githubLink}>
-        <FaGithub size={40} color="#73808D" />
-      </Link>
+      <Row>
+        <Col>
+          <Link
+            to={githubLink}
+            onMouseEnter={handleMouseIconEnter}
+            onMouseLeave={handleMouseIconLeave}
+          >
+            <FaGithub
+              size={40}
+              color={
+                isHovered && isHoveredIcon
+                  ? '#0000CC'
+                  : isHovered
+                  ? '#009999'
+                  : '#73808D'
+              }
+              style={{ transition: 'color 0.3s ease' }}
+            />
+          </Link>
+        </Col>
+        {websiteLink !== '' && (
+          <Col>
+            <Link
+              to={websiteLink}
+              onMouseEnter={handleMouseLinkEnter}
+              onMouseLeave={handleMouseLinkLeave}
+            >
+              <IoIosLink
+                size={40}
+                color={
+                  isHovered && isHoveredLink
+                    ? '#0000CC'
+                    : isHovered
+                    ? '#009999'
+                    : '#73808D'
+                }
+                style={{ transition: 'color 0.3s ease' }}
+              />
+            </Link>
+          </Col>
+        )}
+      </Row>
     </div>
   )
 }

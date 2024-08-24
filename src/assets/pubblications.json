@@ -1,0 +1,28 @@
+{
+  "pubblications": [
+    {
+      "title": "A Study on the energy-efficiency of the Object Tracking Algorithms in Edge Devices",
+      "authors": "G Di Fabrizio, L Calisti, C Contoli, N Kania, E Lattanzi",
+      "year": "2023",
+      "status": "Proceedings of the IEEE/ACM 16th International Conference on Utility and Cloud Computing"
+    },
+    {
+      "title": "A power-aware vision-based virtual sensor for real-time edge computing",
+      "authors": "Chiara Contoli, Lorenzo Calisti, Giacomo Di Fabrizio, Nicholas Kania, Alessandro Bogliolo, Emanuele Lattanzi",
+      "year": "2024",
+      "status": "Journal of Real-Time Image Processing"
+    },
+    {
+      "title": "A Vision-based Virtual Sensor to Enhance Privacy and Energy Efficiency on Edge Computing",
+      "authors": "Nicholas Kania, Alessandro Bogliolo, Lorenzo Calisti, Chiara Contoli, Giacomo Di Fabrizio, Luca Romanelli, Emanuele Lattanzi",
+      "year": "2024",
+      "status": "2024 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)"
+    },
+    {
+      "title": "Semantic Template Recognition of Human Activities in Wearable Sensor Data Using Siamese Network",
+      "authors": "Emanuele Lattanzi, Chiara Contoli, Lorenzo Calisti, Giacomo Di Fabrizio, Nicholas Kania, Susanna Peretti",
+      "year": "2024",
+      "status": "Available at SSRN 4912104"
+    }
+  ]
+}

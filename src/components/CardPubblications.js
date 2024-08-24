@@ -4,6 +4,7 @@ import { PiMedalFill } from 'react-icons/pi'
 
 export default function CardPublications({ title, authors, year, status }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
+  const [isHovered, setIsHovered] = useState(false)
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768)
@@ -12,8 +13,33 @@ export default function CardPublications({ title, authors, year, status }) {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  const cardStyle = {
+    backgroundColor: isHovered ? '#e0f7ff' : 'light',
+    borderColor: isHovered ? '#009999' : '',
+    transition: 'all 0.3s ease-in-out',
+  }
+
+  const titleStyle = {
+    color: isHovered ? '' : '#101214',
+    fontSize: isMobile ? '24px' : '32px',
+    fontWeight: 'bold',
+  }
+
+  const textStyle = {
+    color: isHovered ? '#009999' : '#73808D',
+    fontSize: isMobile ? '16px' : '20px',
+    fontWeight: '400',
+  }
+
   return (
-    <Card bg="light" text="dark" className="mb-2">
+    <Card
+      bg="light"
+      text="dark"
+      className="mb-2"
+      style={cardStyle}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Card.Body>
         <Row>
           {/* Icon column */}
@@ -28,43 +54,11 @@ export default function CardPublications({ title, authors, year, status }) {
 
           {/* Details column */}
           <Col>
-            <Card.Title
-              style={{
-                color: '#101214',
-                fontSize: isMobile ? '24px' : '32px',
-                fontWeight: 'bold',
-              }}
-            >
-              {title}
-            </Card.Title>
+            <Card.Title style={titleStyle}>{title}</Card.Title>
             <Card.Text>
-              <div
-                style={{
-                  color: '#73808D',
-                  fontSize: isMobile ? '16px' : '20px',
-                  fontWeight: '400',
-                }}
-              >
-                {authors}
-              </div>
-              <div
-                style={{
-                  color: '#73808D',
-                  fontSize: isMobile ? '16px' : '20px',
-                  fontWeight: '400',
-                }}
-              >
-                {year}
-              </div>
-              <div
-                style={{
-                  color: '#73808D',
-                  fontSize: isMobile ? '16px' : '20px',
-                  fontWeight: '400',
-                }}
-              >
-                {status}
-              </div>
+              <div style={textStyle}>{authors}</div>
+              <div style={textStyle}>{year}</div>
+              <div style={textStyle}>{status}</div>
             </Card.Text>
           </Col>
         </Row>

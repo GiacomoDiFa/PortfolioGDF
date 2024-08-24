@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "title": "Blog",
+      "description": "My Personal Blog Website",
+      "imageUrl": "assets/bloggdf.png",
+      "githubLink": "https://github.com/GiacomoDiFa/BlogGDF",
+      "programmingLanguages": ["prova1", "prova1"],
+      "websiteLink": "https://giacomodifa.github.io/BlogGDF/"
+    },
+    {
+      "title": "Showcase Website",
+      "description": "Showcase Website For A Speech Terapist",
+      "imageUrl": "assets/websitegio.png",
+      "githubLink": "https://github.com/GiacomoDiFa/websiteGio",
+      "programmingLanguages": ["prova2", "prova2"],
+      "websiteLink": "https://giacomodifa.github.io/websiteGio/"
+    },
+    {
+      "title": "Order App",
+      "description": "An application for ordering food",
+      "imageUrl": "assets/orderfood.png",
+      "githubLink": "https://github.com/GiacomoDiFa/Progetto-PDMIU-Web",
+      "programmingLanguages": ["prova3", "prova3"],
+      "websiteLink": ""
+    },
+    {
+      "title": "Saving App",
+      "description": "An application to track expenses",
+      "imageUrl": "assets/final_image.jpg",
+      "githubLink": "https://github.com/GiacomoDiFa/Saving-app",
+      "programmingLanguages": ["prova4", "prova4"],
+      "websiteLink": ""
+    }
+  ]
+}
