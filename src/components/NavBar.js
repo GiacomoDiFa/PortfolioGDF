@@ -20,23 +20,23 @@ function NavBar() {
           className="justify-content-end"
         >
           <Nav>
-            <Nav.Link href="/">
+            <Nav.Link href="/PortfolioGDF/">
               <FaHome />
               Home
             </Nav.Link>
-            <Nav.Link href="/about">
+            <Nav.Link href="/PortfolioGDF/about">
               <IoPerson />
               About
             </Nav.Link>
-            <Nav.Link href="/projects">
+            <Nav.Link href="/PortfolioGDF/projects">
               <FaLaptopCode />
               Projects/Pubblications
             </Nav.Link>
-            <Nav.Link href="/resume">
+            <Nav.Link href="/PortfolioGDF/resume">
               <FaFileAlt />
               Resume
             </Nav.Link>
-            <Nav.Link href="contacts">
+            <Nav.Link href="/PortfolioGDF/contacts">
               <IoChatbubbles />
               Contact Me
             </Nav.Link>

@@ -82,7 +82,6 @@ export default function CardProject({
             alt="prova"
             src={imageUrl}
             style={{
-              backgroundColor: 'red',
               width: isMobile ? '100%' : '512px',
               height: isMobile ? 'auto' : '310px',
             }}
