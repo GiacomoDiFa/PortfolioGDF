@@ -8,6 +8,7 @@ import { FaLaptopCode } from 'react-icons/fa'
 import { FaFileAlt } from 'react-icons/fa'
 import { IoChatbubbles } from 'react-icons/io5'
 import { FaPenNib } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
@@ -20,33 +21,30 @@ function NavBar() {
           className="justify-content-end"
         >
           <Nav>
-            <Nav.Link href="/PortfolioGDF/">
+            <Link to="/">
               <FaHome />
               Home
-            </Nav.Link>
-            <Nav.Link href="/PortfolioGDF/about">
+            </Link>
+            <Link to="/about">
               <IoPerson />
               About
-            </Nav.Link>
-            <Nav.Link href="/PortfolioGDF/projects">
+            </Link>
+            <Link to="/projects">
               <FaLaptopCode />
               Projects/Pubblications
-            </Nav.Link>
-            <Nav.Link href="/PortfolioGDF/resume">
+            </Link>
+            <Link to="/resume">
               <FaFileAlt />
               Resume
-            </Nav.Link>
-            <Nav.Link href="/PortfolioGDF/contacts">
+            </Link>
+            <Link to="/contacts">
               <IoChatbubbles />
               Contact Me
-            </Nav.Link>
-            <Nav.Link
-              href="https://giacomodifa.github.io/BlogGDF/"
-              target="blank"
-            >
+            </Link>
+            <Link to="https://giacomodifa.github.io/BlogGDF/" target="blank">
               <FaPenNib />
               Blog
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
