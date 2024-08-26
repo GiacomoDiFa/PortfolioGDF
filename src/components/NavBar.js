@@ -21,27 +21,31 @@ function NavBar() {
           className="justify-content-end"
         >
           <Nav>
-            <Link to="/">
+            <Link to="/" className="nav-link">
               <FaHome />
               Home
             </Link>
-            <Link to="/about">
+            <Link to="/about" className="nav-link">
               <IoPerson />
               About
             </Link>
-            <Link to="/projects">
+            <Link to="/projects" className="nav-link">
               <FaLaptopCode />
               Projects/Pubblications
             </Link>
-            <Link to="/resume">
+            <Link to="/resume" className="nav-link">
               <FaFileAlt />
               Resume
             </Link>
-            <Link to="/contacts">
+            <Link to="/contacts" className="nav-link">
               <IoChatbubbles />
               Contact Me
             </Link>
-            <Link to="https://giacomodifa.github.io/BlogGDF/" target="blank">
+            <Link
+              to="https://giacomodifa.github.io/BlogGDF/"
+              target="blank"
+              className="nav-link"
+            >
               <FaPenNib />
               Blog
             </Link>
