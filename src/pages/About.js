@@ -41,13 +41,13 @@ function About() {
             </h1>
           </Row>
           <Row>
-            <Row className="text-start">
+            <Row className="text-start ms-2">
               Hi everyone I am{' '}
               <b className="ps-1" style={{ width: 'auto' }}>
                 Giacomo Di Fabrizio.
               </b>
             </Row>
-            <Row className="text-start d-inline">
+            <Row className="text-start d-inline ms-2">
               I am a developer and a Master Degree Student based in&nbsp;
               <b className="ps-0 pe-0 " style={{ width: 'auto' }}>
                 Ca'Gallo (PU)
@@ -58,11 +58,11 @@ function About() {
               </b>
               .
             </Row>
-            <Row className="text-start">
+            <Row className="text-start ms-2">
               I've got a bachelor degree in Applied Computer Science from
               University of Urbino "Carlo Bo".
             </Row>
-            <Row className="text-start pt-4">
+            <Row className="text-start pt-4 ms-2">
               Apart from coding, some other activities that I love to do!
             </Row>
             <Row className="pt-2">
