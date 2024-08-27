@@ -51,104 +51,107 @@ export default function CardProject({
   }
 
   return (
-    <div
+    <Card
+      bg="light"
+      text="dark"
       style={{
         width: isMobile ? '100%' : '100%',
         height: isMobile ? 'auto' : 'auto',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'start',
       }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className="mb-2"
     >
-      <Card
-        bg="light"
-        text="dark"
-        style={{
-          width: isMobile ? '100%' : '100%',
-          height: isMobile ? 'auto' : 'auto',
-        }}
-        className="mb-2"
-      >
-        <Card.Body
+      <Card.Body>
+        <div
           style={{
+            width: isMobile ? '100%' : '100%',
+            height: isMobile ? 'auto' : 'auto',
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            flexDirection: 'column',
+            alignItems: 'start',
           }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
-          <Card.Img
-            alt="prova"
-            src={imageUrl}
+          <Card.Body
             style={{
-              width: isMobile ? '100%' : '512px',
-              height: isMobile ? 'auto' : '310px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: '100%',
             }}
-          />
-        </Card.Body>
-      </Card>
-      <h1
-        style={{
-          color: '#101214',
-          fontSize: isMobile ? '24px' : '32px',
-          fontWeight: 'bold',
-        }}
-      >
-        {title}
-      </h1>
-      <h3
-        style={{
-          color: isHovered ? '#009999' : '#73808D',
-          fontSize: isMobile ? '16px' : '20px',
-          fontWeight: '400',
-          transition: 'color 0.3s ease',
-        }}
-      >
-        {description}
-      </h3>
-      <Row>
-        <Col>
-          <Link
-            to={githubLink}
-            onMouseEnter={handleMouseIconEnter}
-            onMouseLeave={handleMouseIconLeave}
           >
-            <FaGithub
-              size={40}
-              color={
-                isHovered && isHoveredIcon
-                  ? '#0000CC'
-                  : isHovered
-                  ? '#009999'
-                  : '#73808D'
-              }
-              style={{ transition: 'color 0.3s ease' }}
+            <Card.Img
+              alt="prova"
+              src={imageUrl}
+              style={{
+                width: isMobile ? '100%' : '512px',
+                height: isMobile ? 'auto' : '310px',
+              }}
             />
-          </Link>
-        </Col>
-        {websiteLink !== '' && (
-          <Col>
-            <Link
-              to={websiteLink}
-              onMouseEnter={handleMouseLinkEnter}
-              onMouseLeave={handleMouseLinkLeave}
-            >
-              <IoIosLink
-                size={40}
-                color={
-                  isHovered && isHoveredLink
-                    ? '#0000CC'
-                    : isHovered
-                    ? '#009999'
-                    : '#73808D'
-                }
-                style={{ transition: 'color 0.3s ease' }}
-              />
-            </Link>
-          </Col>
-        )}
-      </Row>
-    </div>
+          </Card.Body>
+          <h1
+            style={{
+              color: '#101214',
+              fontSize: isMobile ? '24px' : '32px',
+              fontWeight: 'bold',
+            }}
+          >
+            {title}
+          </h1>
+          <h3
+            style={{
+              color: isHovered ? '#009999' : '#73808D',
+              fontSize: isMobile ? '16px' : '20px',
+              fontWeight: '400',
+              transition: 'color 0.3s ease',
+            }}
+          >
+            {description}
+          </h3>
+          <Row>
+            <Col>
+              <Link
+                to={githubLink}
+                onMouseEnter={handleMouseIconEnter}
+                onMouseLeave={handleMouseIconLeave}
+              >
+                <FaGithub
+                  size={40}
+                  color={
+                    isHovered && isHoveredIcon
+                      ? '#0000CC'
+                      : isHovered
+                      ? '#009999'
+                      : '#73808D'
+                  }
+                  style={{ transition: 'color 0.3s ease' }}
+                />
+              </Link>
+            </Col>
+            {websiteLink !== '' && (
+              <Col>
+                <Link
+                  to={websiteLink}
+                  onMouseEnter={handleMouseLinkEnter}
+                  onMouseLeave={handleMouseLinkLeave}
+                >
+                  <IoIosLink
+                    size={40}
+                    color={
+                      isHovered && isHoveredLink
+                        ? '#0000CC'
+                        : isHovered
+                        ? '#009999'
+                        : '#73808D'
+                    }
+                    style={{ transition: 'color 0.3s ease' }}
+                  />
+                </Link>
+              </Col>
+            )}
+          </Row>
+        </div>
+      </Card.Body>
+    </Card>
   )
 }

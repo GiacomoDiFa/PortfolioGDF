@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function Resume() {
   return (
@@ -14,14 +15,14 @@ function Resume() {
         <Col></Col>
         <Col>
           <Button className="ps-0 pe-0 bg-warning border-warning">
-            <a
+            <Link
               className="ps-5 pe-5 pt-2 pb-2"
-              href="/CV_GiacomoDiFabrizio.pdf"
+              to={'/CV_GiacomoDiFabrizio.pdf'}
               target="_blank"
               style={{ textDecoration: 'none', color: 'white' }}
             >
               Resume
-            </a>
+            </Link>
           </Button>
         </Col>
         <Col></Col>
