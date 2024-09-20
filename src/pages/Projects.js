@@ -8,7 +8,7 @@ import projectsJsonData from '../assets/projects.json'
 function Projects() {
   return (
     <Container>
-      <h1>Projects</h1>
+      <h1 className='mt-5 mb-3'>Projects</h1>
       <Row>
         {projectsJsonData.projects.map((project) => (
           <Col md="6" xs="12" className="pt-2 pb-2">
@@ -24,7 +24,7 @@ function Projects() {
           </Col>
         ))}
       </Row>
-      <h1 className="mt-2">Pubblications</h1>
+      <h1 className="mt-5 mb-3">Pubblications</h1>
       <Row>
         {pubblicationsJsonData.pubblications.map((pubblication) => (
           <CardPublications
@@ -33,6 +33,7 @@ function Projects() {
             authors={pubblication.authors}
             year={pubblication.year}
             status={pubblication.status}
+            link={pubblication.link}
           />
         ))}
       </Row>

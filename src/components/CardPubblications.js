@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
 import { PiMedalFill } from 'react-icons/pi'
+import { Link } from 'react-router-dom'
 
-export default function CardPublications({ title, authors, year, status }) {
+export default function CardPublications({ title, authors, year, status, link }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
   const [isHovered, setIsHovered] = useState(false)
 
@@ -32,6 +33,7 @@ export default function CardPublications({ title, authors, year, status }) {
   }
 
   return (
+    <Link to={link} style={{textDecoration:"none"}}>
     <Card
       bg="light"
       text="dark"
@@ -64,5 +66,6 @@ export default function CardPublications({ title, authors, year, status }) {
         </Row>
       </Card.Body>
     </Card>
+    </Link>
   )
 }

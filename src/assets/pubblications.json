@@ -4,25 +4,29 @@
       "title": "A Study on the energy-efficiency of the Object Tracking Algorithms in Edge Devices",
       "authors": "G Di Fabrizio, L Calisti, C Contoli, N Kania, E Lattanzi",
       "year": "2023",
-      "status": "Proceedings of the IEEE/ACM 16th International Conference on Utility and Cloud Computing"
+      "status": "Proceedings of the IEEE/ACM 16th International Conference on Utility and Cloud Computing",
+      "link":"https://dl.acm.org/doi/abs/10.1145/3603166.3632541"
     },
     {
       "title": "A power-aware vision-based virtual sensor for real-time edge computing",
       "authors": "Chiara Contoli, Lorenzo Calisti, Giacomo Di Fabrizio, Nicholas Kania, Alessandro Bogliolo, Emanuele Lattanzi",
       "year": "2024",
-      "status": "Journal of Real-Time Image Processing"
+      "status": "Journal of Real-Time Image Processing",
+      "link": "https://link.springer.com/article/10.1007/s11554-024-01482-0"
     },
     {
       "title": "A Vision-based Virtual Sensor to Enhance Privacy and Energy Efficiency on Edge Computing",
       "authors": "Nicholas Kania, Alessandro Bogliolo, Lorenzo Calisti, Chiara Contoli, Giacomo Di Fabrizio, Luca Romanelli, Emanuele Lattanzi",
       "year": "2024",
-      "status": "2024 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)"
+      "status": "2024 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)",
+      "link": "https://ieeexplore.ieee.org/abstract/document/10503463"
     },
     {
       "title": "Semantic Template Recognition of Human Activities in Wearable Sensor Data Using Siamese Network",
       "authors": "Emanuele Lattanzi, Chiara Contoli, Lorenzo Calisti, Giacomo Di Fabrizio, Nicholas Kania, Susanna Peretti",
       "year": "2024",
-      "status": "Available at SSRN 4912104"
+      "status": "Available at SSRN 4912104",
+      "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4912104"
     }
   ]
 }

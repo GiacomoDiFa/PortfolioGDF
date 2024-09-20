@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Image } from 'react-bootstrap'
 import {
   CardLanguageBlue,
   CardLanguageGreen,
@@ -29,17 +29,22 @@ import { IoMusicalNotesSharp } from 'react-icons/io5'
 import { GiJumpingRope } from 'react-icons/gi'
 import { GrSwim } from 'react-icons/gr'
 import Github from '../components/Github'
+import giacomo from '../assets/giacomo.png'
 
 function About() {
   return (
     <Container>
-      <Row>
-        <Col md="6">
-          <Row>
+      <Row className=''>
             <h1>
               Who <b>I'm</b>
             </h1>
           </Row>
+      <Row className='mt-2'>
+      <Col md="6" className=''>
+        <Image className='' alt='Giacomo' src={giacomo} thumbnail style={{width:"500px"}}/>
+        </Col>
+        <Col md="6">
+          
           <Row>
             <Row className="text-start ms-2">
               Hi everyone I am{' '}
@@ -99,7 +104,6 @@ function About() {
             </Row>
           </Row>
         </Col>
-        <Col md="6">ciao</Col>
       </Row>
       <Row className="justify-content-center p-2">
         <h1>Programming Languages</h1>
