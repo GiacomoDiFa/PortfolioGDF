@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 function Resume() {
   return (
     <Container>
+      <Row>Studies</Row>
+      <Row>Jobs</Row>
       <Row className="d-inline">
         <Col></Col>
         For see my <b className="ps-0 pe-0">resume</b>, click the following

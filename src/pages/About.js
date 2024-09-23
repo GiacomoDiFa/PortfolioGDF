@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Row, Image } from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 import {
   CardLanguageBlue,
   CardLanguageGreen,
@@ -24,89 +24,13 @@ import { FaDocker } from 'react-icons/fa'
 import { FaWindows } from 'react-icons/fa'
 import { FaLinux } from 'react-icons/fa'
 import { FaAndroid } from 'react-icons/fa'
-import { IoVideocam } from 'react-icons/io5'
-import { IoMusicalNotesSharp } from 'react-icons/io5'
-import { GiJumpingRope } from 'react-icons/gi'
-import { GrSwim } from 'react-icons/gr'
 import Github from '../components/Github'
-import giacomo from '../assets/giacomo.png'
 
 function About() {
   return (
     <Container>
-      <Row className=''>
-            <h1>
-              Who <b>I'm</b>
-            </h1>
-          </Row>
-      <Row className='mt-2'>
-      <Col md="6" className=''>
-        <Image className='' alt='Giacomo' src={giacomo} thumbnail style={{width:"500px"}}/>
-        </Col>
-        <Col md="6">
-          
-          <Row>
-            <Row className="text-start ms-2">
-              Hi everyone I am{' '}
-              <b className="ps-1" style={{ width: 'auto' }}>
-                Giacomo Di Fabrizio.
-              </b>
-            </Row>
-            <Row className="text-start d-inline ms-2">
-              I am a developer and a Master Degree Student based in&nbsp;
-              <b className="ps-0 pe-0 " style={{ width: 'auto' }}>
-                Ca'Gallo (PU)
-              </b>
-              , a little town in the center of&nbsp;
-              <b className="ps-0 pe-0" style={{ width: 'auto' }}>
-                Italy
-              </b>
-              .
-            </Row>
-            <Row className="text-start ms-2">
-              I've got a bachelor degree in Applied Computer Science from
-              University of Urbino "Carlo Bo".
-            </Row>
-            <Row className="text-start pt-4 ms-2">
-              Apart from coding, some other activities that I love to do!
-            </Row>
-            <Row className="pt-2">
-              <Col md="3" xs="3" className="text-end">
-                <IoVideocam size={30} />
-              </Col>
-              <Col md="9" xs="9" className="text-start">
-                Filming Videos With My GoPro
-              </Col>
-            </Row>
-            <Row>
-              <Col md="3" xs="6" className=" text-end">
-                <IoMusicalNotesSharp size={30} />
-              </Col>
-              <Col md="9" xs="6" className=" text-start">
-                Dance
-              </Col>
-            </Row>
-            <Row>
-              <Col md="3" xs="6" className=" text-end">
-                <GiJumpingRope size={30} />
-              </Col>
-              <Col md="9" xs="6" className=" text-start">
-                Jump Rope
-              </Col>
-            </Row>
-            <Row>
-              <Col md="3" xs="6" className=" text-end">
-                <GrSwim size={30} />
-              </Col>
-              <Col md="9" xs="6" className=" text-start">
-                Swim
-              </Col>
-            </Row>
-          </Row>
-        </Col>
-      </Row>
       <Row className="justify-content-center p-2">
-        <h1>Programming Languages</h1>
+        <h1 className='mt-5 mb-3' style={{fontFamily:"Source Sans Pro sans-serif", fontSize:'48px', lineHeight:'67.2px', textAlign:'center', letterSpacing:'normal', color:'#282d38'}}>Programming Languages</h1>
       </Row>
       <Row className="justify-content-center">
         <Col md="3" xs="6" className="p-2">
@@ -141,7 +65,7 @@ function About() {
         </Col>
       </Row>
       <Row className="justify-content-center p-2">
-        <h1>Tools</h1>
+        <h1 className='mt-5 mb-3' style={{fontFamily:"Source Sans Pro sans-serif", fontSize:'48px', lineHeight:'67.2px', textAlign:'center', letterSpacing:'normal', color:'#282d38'}}>Tools</h1>
       </Row>
       <Row className="justify-content-center">
         <Col md="3" xs="6" className="p-2">
@@ -165,7 +89,7 @@ function About() {
       </Row>
 
       <Row className="justify-content-center p-2">
-        <h1>Operating Systems</h1>
+        <h1 className='mt-5 mb-3' style={{fontFamily:"Source Sans Pro sans-serif", fontSize:'48px', lineHeight:'67.2px', textAlign:'center', letterSpacing:'normal', color:'#282d38'}}>Operating Systems</h1>
       </Row>
       <Row className="justify-content-center">
         <Col md="3" xs="6" className="p-2">
@@ -183,7 +107,7 @@ function About() {
       </Row>
 
       <Row className="justify-content-center p-2">
-        <h1>Days I Code</h1>
+        <h1 className='mt-5 mb-3' style={{fontFamily:"Source Sans Pro sans-serif", fontSize:'48px', lineHeight:'67.2px', textAlign:'center', letterSpacing:'normal', color:'#282d38'}}>Days I Code</h1>
       </Row>
       <Row className="justify-content-center p-2">
         <Github />

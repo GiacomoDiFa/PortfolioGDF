@@ -3,12 +3,12 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { FaHome } from 'react-icons/fa'
-import { IoPerson } from 'react-icons/io5'
 import { FaLaptopCode } from 'react-icons/fa'
 import { FaFileAlt } from 'react-icons/fa'
 import { IoChatbubbles } from 'react-icons/io5'
 import { FaPenNib } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import { FaTools } from "react-icons/fa";
 
 function NavBar() {
   return (
@@ -22,23 +22,23 @@ function NavBar() {
         >
           <Nav>
             <Link to="/" className="nav-link">
-              <FaHome />
+              <FaHome className='me-2'/>
               Home
             </Link>
             <Link to="/about" className="nav-link">
-              <IoPerson />
-              About
+              <FaTools className='me-2' />
+              Skills
             </Link>
             <Link to="/projects" className="nav-link">
-              <FaLaptopCode />
+              <FaLaptopCode className='me-2'/>
               Projects/Pubblications
             </Link>
             <Link to="/resume" className="nav-link">
-              <FaFileAlt />
+              <FaFileAlt className='me-2'/>
               Resume
             </Link>
             <Link to="/contacts" className="nav-link">
-              <IoChatbubbles />
+              <IoChatbubbles className='me-2'/>
               Contact Me
             </Link>
             <Link
@@ -46,7 +46,7 @@ function NavBar() {
               target="blank"
               className="nav-link"
             >
-              <FaPenNib />
+              <FaPenNib className='me-2'/>
               Blog
             </Link>
           </Nav>
