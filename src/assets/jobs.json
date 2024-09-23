@@ -1,0 +1,25 @@
+{
+    "jobs": [
+        {
+            "title": "ciao",
+            "company": "ciao",
+            "description": "",
+            "location": "",
+            "duration": ""
+        },
+        {
+            "title": "",
+            "company": "",
+            "description": "",
+            "location": "",
+            "duration": ""
+        },
+        {
+            "title": "",
+            "company": "",
+            "description": "",
+            "location": "",
+            "duration": ""
+        }
+    ]
+}
