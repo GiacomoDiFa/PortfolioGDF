@@ -16,7 +16,7 @@ function Resume() {
       ))}</Row>
       <h1 className="mt-5 mb-3" style={{fontFamily:"Source Sans Pro sans-serif", fontSize:'48px', lineHeight:'67.2px', textAlign:'center', letterSpacing:'normal', color:'#282d38'}}>Studies</h1>
       <Row>{studiesJsonData.studies.map((studie)=>(
-        <CardStudie key={studie.title} title={studie.title} istitute={studie.istitute} description={studie.thesis} location={studie.location} finalgrade={studie.finalgrade} duration={studie.duration}/>
+        <CardStudie key={studie.title} title={studie.title} istitute={studie.istitute} thesis={studie.thesis} location={studie.location} finalgrade={studie.finalgrade} duration={studie.duration}/>
       ))}</Row>
 
 

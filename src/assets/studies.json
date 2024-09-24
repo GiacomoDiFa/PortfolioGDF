@@ -6,28 +6,28 @@
             "thesis": "",
             "location": "Urbino, Italy",
             "finalgrade": "110/110 with honors",
-            "duration": ""
+            "duration": "28/09/2022 - 25/10/2024"
         },
         {
             "title": "Erasmus",
             "istitute": "University of Thessaly Volos",
             "location": "Volos, Greece",
-            "duration": ""
+            "duration": "26/02/2024 - 26/06/2024"
         },
         {
             "title": "Bachelor's Degree in Applied Computer Science",
             "istitute": "University of Urbino 'Carlo Bo'",
-            "thesis": "",
+            "thesis": "Simulated annealing per problemi di ottimizzazione globale: un'analisi sperimentale",
             "location": "Urbino, Italy",
             "finalgrade": "110/110 with honors",
-            "duration": ""
+            "duration": "05/09/2019 - 09/02/2023"
         },
         {
             "title": "Scientific high school diploma",
             "istitute": "Istituto Omnicomprensivo 'Montefeltro'",
             "location": "Sassocorvaro, Italy",
             "finalgrade": "87/100",
-            "duration": ""
+            "duration": "2014 - 2019"
         }
     ]
 }

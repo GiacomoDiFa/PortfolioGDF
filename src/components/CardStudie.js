@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
-import { PiMedalFill } from 'react-icons/pi'
 
-export default function CardStudie({ title, istitute, thesis, location, finalgrade,duration }) {
+export default function CardStudie({ title, istitute, thesis, location, finalgrade, duration }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
   const [isHovered, setIsHovered] = useState(false)
 
@@ -45,10 +44,10 @@ export default function CardStudie({ title, istitute, thesis, location, finalgra
           {/* Icon column */}
           <Col
             xs="1"
-            className="d-flex align-items-center justify-content-center"
+
           >
             <div className="">
-              <PiMedalFill size={40} />
+              {duration}
             </div>
           </Col>
 
@@ -57,7 +56,8 @@ export default function CardStudie({ title, istitute, thesis, location, finalgra
             <Card.Title style={titleStyle}>{title}</Card.Title>
             <Card.Text>
               <div style={textStyle}>{istitute}</div>
-              <div style={textStyle}>{thesis}</div>
+              <div style={textStyle}>Thesis: {thesis}</div>
+              <div style={textStyle}>Final grade: {finalgrade}</div>
               <div style={textStyle}>{location}</div>
             </Card.Text>
           </Col>
