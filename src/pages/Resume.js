@@ -31,7 +31,7 @@ function Resume() {
 
       <Row className="d-inline">
         <Col></Col>
-        For see my <b className="ps-0 pe-0">resume</b>, click the following
+        To see my <b className="ps-0 pe-0">resume</b>, click the following
         button
         <Col></Col>
       </Row>

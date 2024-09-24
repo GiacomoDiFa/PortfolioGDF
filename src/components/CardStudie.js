@@ -28,6 +28,7 @@ export default function CardStudie({ title, istitute, thesis, location, finalgra
     color: isHovered ? '#009999' : '#73808D',
     fontSize: isMobile ? '16px' : '20px',
     fontWeight: '400',
+    textAlign: "start"
   }
 
   return (
@@ -41,24 +42,22 @@ export default function CardStudie({ title, istitute, thesis, location, finalgra
     >
       <Card.Body>
         <Row>
-          {/* Icon column */}
-          <Col
-            xs="1"
-
-          >
-            <div className="">
-              {duration}
-            </div>
-          </Col>
-
-          {/* Details column */}
           <Col>
-            <Card.Title style={titleStyle}>{title}</Card.Title>
+            <Card.Title style={titleStyle}>
+              <Row>
+                <Col md='3' style={{ backgroundColor: "red", fontSize: isMobile ? '20px' : '20px', color: '#73808D', textAlign: "center", lineHeight: "auto", height: "auto", letterSpacing: "0.6px", boxShadow: "none", borderRadius: "40px", width: "auto" }}>{duration}</Col>
+                <Col md='9' style={{ textAlign: "start" }}>{title}</Col>
+              </Row>
+            </Card.Title>
             <Card.Text>
-              <div style={textStyle}>{istitute}</div>
-              <div style={textStyle}>Thesis: {thesis}</div>
-              <div style={textStyle}>Final grade: {finalgrade}</div>
-              <div style={textStyle}>{location}</div>
+              <Row>
+                {!isMobile && <Col md='3' style={{ backgroundColor: "red", fontSize: isMobile ? '20px' : '20px', color: '#73808D', textAlign: "center", lineHeight: "auto", height: "auto", letterSpacing: "0.6px", boxShadow: "none", borderRadius: "40px", width: "auto", visibility: "hidden", fontWeight: "bold" }}>{duration}</Col>}
+                <Col md='9'><div style={textStyle}>{istitute}</div>
+                  <div style={textStyle}>Thesis: {thesis}</div>
+                  <div style={textStyle}>Final grade: {finalgrade}</div>
+                  <div style={textStyle}>{location}</div>
+                </Col>
+              </Row>
             </Card.Text>
           </Col>
         </Row>
