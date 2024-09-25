@@ -54,9 +54,6 @@ export default function CardStudie({ title, istitute, thesis, location, finalgra
           <Col>
             <Card.Title style={titleStyle}>
               <Row>
-
-
-
                 <Col md='3' style={{ borderColor: "#009999", borderWidth: "4px", borderStyle: "solid", fontSize: isMobile ? '20px' : '20px', color: '#73808d', textAlign: "center", lineHeight: "auto", height: "auto", letterSpacing: "0.6px", boxShadow: "none", borderRadius: "40px", width: "auto" }}>{duration}</Col>
                 <Col md='9' style={{ textAlign: "start" }}>{title}</Col>
               </Row>

@@ -24,33 +24,27 @@ function Resume() {
 
 
 
-
-
-
-
-
-      <Row className="d-inline">
-        <Col></Col>
-        To see my <b className="ps-0 pe-0">resume</b>, click the following
-        button
-        <Col></Col>
-      </Row>
-      <Row>
-        <Col></Col>
-        <Col>
-          <Button className="ps-0 pe-0 bg-warning border-warning">
+<Row className='mt-3'>
+  <Col md='6' className='' style={{fontFamily:"Source Sans Pro sans-serif", fontSize:'24px', lineHeight:'', textAlign:'start', letterSpacing:'normal', color:'#282d38'}}>Are you still curious about me?</Col>
+  <Col md='6' className='d-flex justify-content-md-end justify-content-center'>
+  <Button className="ps-0 pe-0 " style={{backgroundColor:"#009999", borderColor:"#009999"}}>
             <Link
-              className="ps-5 pe-5 pt-2 pb-2"
+              className="ps-5 pe-5"
               to={'/CV_GiacomoDiFabrizio.pdf'}
               target="_blank"
-              style={{ textDecoration: 'none', color: 'white' }}
+              style={{textDecoration: 'none', color: 'white',fontFamily:"Source Sans Pro sans-serif", fontSize:'20px', lineHeight:'', letterSpacing:'normal'}}
             >
               Resume
             </Link>
-          </Button>
-        </Col>
-        <Col></Col>
-      </Row>
+          </Button></Col>
+</Row>
+
+
+
+
+
+
+      
     </Container>
   )
 }

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
-import { PiMedalFill } from 'react-icons/pi'
 
-export default function CardJob({ title, company, description, location, duration }) {
+export default function CardStudie({ title, company, description, location, duration }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
   const [isHovered, setIsHovered] = useState(false)
 
@@ -29,6 +28,16 @@ export default function CardJob({ title, company, description, location, duratio
     color: isHovered ? '#009999' : '#73808D',
     fontSize: isMobile ? '16px' : '20px',
     fontWeight: '400',
+    textAlign: "start",
+
+  }
+
+  const textUniversityStyle = {
+    color: isHovered ? '#009999' : '#73808D',
+    fontSize: isMobile ? '16px' : '20px',
+    fontWeight: 'bold',
+    textAlign: "start",
+
   }
 
   return (
@@ -42,23 +51,22 @@ export default function CardJob({ title, company, description, location, duratio
     >
       <Card.Body>
         <Row>
-          {/* Icon column */}
-          <Col
-            xs="1"
-            className="d-flex align-items-center justify-content-center"
-          >
-            <div className="">
-              <PiMedalFill size={40} />
-            </div>
-          </Col>
-
-          {/* Details column */}
           <Col>
-            <Card.Title style={titleStyle}>{title}</Card.Title>
+            <Card.Title style={titleStyle}>
+              <Row>
+                <Col md='3' style={{ borderColor: "#009999", borderWidth: "4px", borderStyle: "solid", fontSize: isMobile ? '20px' : '20px', color: '#73808d', textAlign: "center", lineHeight: "auto", height: "auto", letterSpacing: "0.6px", boxShadow: "none", borderRadius: "40px", width: "auto" }}>{duration}</Col>
+                <Col md='9' style={{ textAlign: "start" }}>{title}</Col>
+              </Row>
+            </Card.Title>
             <Card.Text>
-              <div style={textStyle}>{company}</div>
-              <div style={textStyle}>{description}</div>
-              <div style={textStyle}>{location}</div>
+              <Row>
+                {!isMobile && <Col md='3' style={{ borderWidth: "4px", borderStyle: "solid", backgroundColor: "red", fontSize: isMobile ? '20px' : '20px', color: '#73808D', textAlign: "center", lineHeight: "auto", height: "auto", letterSpacing: "0.6px", boxShadow: "none", borderRadius: "40px", width: "auto", visibility: "hidden", fontWeight: "bold" }}>{duration}</Col>}
+                <Col md='9'>
+                  {company && <div style={textUniversityStyle}>{company}</div>}
+                  {description && <div style={textStyle}>{description}</div>}
+                  {location && <div style={textStyle}>{location}</div>}
+                </Col>
+              </Row>
             </Card.Text>
           </Col>
         </Row>
