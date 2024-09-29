@@ -9,12 +9,14 @@ import { IoChatbubbles } from 'react-icons/io5'
 import { FaPenNib } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import { FaTools } from "react-icons/fa";
+import { Image } from 'react-bootstrap'
+import logo from '../assets/favicon3.png'
 
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-transparent p-4">
       <Container>
-        <Navbar.Brand><Link to = "/" className='nav-link'>LOGO</Link></Navbar.Brand>
+        <Navbar.Brand><Link to = "/" className='nav-link'><Image src={logo} width={50} alt='logo'></Image></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
