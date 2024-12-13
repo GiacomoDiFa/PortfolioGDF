@@ -3,9 +3,9 @@
         {
             "title": "Master's degree in Applied Computer Science",
             "istitute": "University of Urbino 'Carlo Bo'",
-            "thesis": "",
+            "thesis": "Progettazione di un sensore virtuale energeticamente efficiente basato sulla computer vision",
             "location": "Urbino, Italy",
-            "finalgrade": "110/110 with honors",
+            "finalgrade": "110/110 with honors and special mention",
             "duration": "28/09/2022 - 25/10/2024"
         },
         {
@@ -13,6 +13,12 @@
             "istitute": "University of Thessaly Volos",
             "location": "Volos, Greece",
             "duration": "26/02/2024 - 26/06/2024"
+        },
+        {
+            "title":"Winner of the award for the best graduate 2021/2022",
+            "istitute":"University of Urbino 'Carlo Bo'",
+            "location":"Urbino, Italy",
+            "duration":"29/06/2023"
         },
         {
             "title": "Bachelor's Degree in Applied Computer Science",
