@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{marginLeft:"5%", marginRight:"5%"}}>
       <BrowserRouter basename="/PortfolioGDF">
         <NavBar />
         <Routes>

@@ -1,6 +1,13 @@
 {
     "jobs": [
         {
+            "title": "GCP Consultant - Retec Business Unit",
+            "company": "GoReply, part of the Reply Group",
+            "description": "Working in the Retec Business Unit, as a consultant for Google Cloud Platform (GCP), specialized in developing and deploying applications on Google Cloud Platform (GCP).",
+            "location": "Milano, Italy",
+            "duration": "09/01/2025 - Till Present"
+        },
+        {
             "title": "Research grant, CTE Square project",
             "company": "University of Urbino 'Carlo Bo'",
             "description": "Worked to find IoT and edge computing solutions for real-time semantic enrichment of digital twins at city scale",

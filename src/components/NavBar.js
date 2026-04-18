@@ -43,14 +43,14 @@ function NavBar() {
               <IoChatbubbles className='me-2'/>
               Contact Me
             </Link>
-            <Link
+            {/* <Link
               to="https://giacomodifa.github.io/BlogGDF/"
               target="blank"
               className="nav-link"
             >
               <FaPenNib className='me-2'/>
               Blog
-            </Link>
+            </Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
